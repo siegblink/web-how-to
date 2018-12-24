@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Modal Login Form</h2>
+    <!-- login button -->
+    <button onclick="clickLogin()" style="width: auto">Login</button>
+
+    <!-- modal container -->
+    <div id="id01" class="modal">
+      <form action="" class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="clickClose()" class="close" title="Close Modal"
+            >&times;</span
+          >
+          <img src="images/002-monster-26.svg" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><strong>Username</strong></label>
+          <input
+            type="text"
+            placeholder="Enter username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><strong>Password</strong></label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button onclick="clickClose()" type="button" class="cancelbtn">
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="script.js" type="text/babel"></script>
+  </body>
+</html>
